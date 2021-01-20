@@ -1,3 +1,4 @@
 # Grade10Letters
 ## Resources Used
-- The Template for both the index.html for the root parent directory and the individual letters were taken from [here](https://github.com/wildbit/postmark-templates)
+- The Template for both the index.html for the root parent directory and the individual letters were taken from [here](https://github.com/wildbit/postmark-templates). Only copy the .html file, ignore the .txt file there.
+- The files were encrypted by [Staticrypt](https://github.com/robinmoisson/staticrypt). To do this, first install staticrypt by `npm install -g staticrypt`. Once you've down that, navigate to the subdirectory where the person's letter is (make sure the letter is called `raw_letter.html`), and then run the following command `staticrypt raw_letter.html **password**`. **BE SURE THE DELETE THE RAW VERSION AFTERWORDS**
