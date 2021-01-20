@@ -57,23 +57,40 @@ layout: default
 title: Introduction
 ---
 ```
-- Open a terminal window in the parent directory and run `bundle exec jekyll serve`. Now open a browser and open `http://127.0.0.1:4000/`
-
-
+- Open a terminal window in the parent directory and run `bundle exec jekyll serve`. Now open a browser and open `http://127.0.0.1:4000/`. 
 
 ### Encryption
 - Open a terminal window and run `npm install -g staticrypt`
-- 
 
+### Welcome Page
+- Download the welcome page which I used from [here](https://github.com/wildbit/postmark-templates/blob/master/templates-inlined/plain/welcome/content.html) and rename it into `index.html`
 
-### Using It
+### Using This Setup
+- First, create a new repository in Github and open it clone it onto your computer. 
+- Then customise the welcome page which we downloaded as `index.html`. Apart from line # 11, I didn’t feel the need to touch anything before line # 464. 
+- Now, minimise this folder and go to the poole directory which you downloaded and edited. Go under the `_posts` folder and then duplicate the template you created as many times as needed. 
+- Under the `layout` and `title` definitions, you can start typing whatever message you want to in each.
+- Once you are done, save all the files and go to the browser tab with `http://127.0.0.1:4000/` open. One by one, go to the open the contents as required and press `Command + S` to save it. Save it as a complete HTML file (select the *Multiple files* option). 
+- Now open a terminal window, navigate to this directory and use staticrypt as follows `staticrypt filename.html password`.
+- Rename the output file as `index.html` and put this file and the companion css file in `/name/` directory. 
+- Push the chances to Github and you’re good to go!
 
+## File Structure
+```
+.
+|- index.html #main page accessable at https://jairelan.github.io/Grade10Letters/
+|- 404.html
+\- 404.css #support file for 404.html
+|- Personname #page accessable at https://jairelan.github.io/Grade10Letters/personname
+	\- index.html #encrypted letter
+	\- person.css #support css file
+|- Personname #page accessable at https://jairelan.github.io/Grade10Letters/personname
+	\- index.html #encrypted letter
+	\- person.css #support css file
+|- Personname #page accessable at https://jairelan.github.io/Grade10Letters/personname
+	\- index.html #encrypted letter
+	\- person.css #support css file
+```
 
-
-## Resources Used
-- The Template for the index.html for the root parent directory was taken from [here](https://github.com/wildbit/postmark-templates). Only copy the .html file, ignore the .txt file there.
-- Download [poole](https://github.com/poole/poole) locally on your computer. Go to the `_posts` folder and duplicated the template the number of times it is required. Use `bundle exec jekyll serve` to start the server and go to `http://127.0.0.1:4000/` on your browser and then navigate to the page which is required. After that, press `Command + S` to save it as an html file (Complete HTML, Multiple files). 
-- The files were encrypted by [Staticrypt](https://github.com/robinmoisson/staticrypt). To do this, first install staticrypt by `npm install -g staticrypt`. Once you've down that, navigate to the subdirectory where the person's letter is (make sure the letter is called `raw_letter.html`), and then run the following command `staticrypt raw_letter.html **password**`. Rename the file to `index.html` and put `index.html` and the folder containing the css in this directory. 
-An alternative I've considered for the passwords is [pagecrypt](https://github.com/MaxLaumeister/PageCrypt), however, I decided against it as it didn't have a CLI. 
 
 FOR THE TIME BEING, THE INDEX.HTML IN THE JAIRELAN FOLDER HAS THE PASSWORD `password`
