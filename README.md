@@ -1,4 +1,4 @@
-# Grade10Letters
+# End of The Year Letters for Class 10
 ## Setting Up
 ### Main Content
 - Download the [poole](https://github.com/poole/poole) code as a `.zip` file. Unzip the file, and open the folder in your default code editor.
