@@ -80,7 +80,7 @@ title: Introduction
 .
 |- index.html #main page accessable at https://jairelan.github.io/Grade10Letters/
 |- 404.html
-\- 404.css #support file for 404.html
+|- 404.css #support file for 404.html
 |- Personname #page accessable at https://jairelan.github.io/Grade10Letters/personname
 	\- index.html #encrypted letter
 	\- person.css #support css file
